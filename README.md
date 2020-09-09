@@ -8,7 +8,7 @@ Setting a ProcessingTime trigger with a 5-second micro-batch interval on the mos
 
 020-09-09 05:22:44 WARN  ProcessingTimeExecutor:66 - Current batch is falling behind. The trigger interval is 5000 milliseconds, but spent 46218 milliseconds
 
-Maintaining the Default trigger (runs micro-batch as soon as it can) was more performant in terms of latency and this warning did not occur.
+Maintaining the Default trigger (runs micro-batch as soon as it can) was more performant in terms of latency, based on the durationMs subgroup metrics in the progress report
 
 ### maxOffsetsPerTrigger
 Changing this property affected the inputRowsPerSecond to processedRowsPerSecond ratio (throughout); generally increasing the value of maxOffsetsPerTrigger increased the ratio of inputRowsPerSecond to processedRowsPerSecond.
